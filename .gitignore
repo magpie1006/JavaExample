@@ -4,3 +4,6 @@
 .project
 .idea
 *.iml
+.DS_store
+*.gradle/
+*build/
