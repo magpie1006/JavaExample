@@ -65,4 +65,11 @@ public class MatchListTest {
         System.out.println(filteredList);   // []
         assertTrue(filteredList.size() == 0);
     }
+
+    @Test
+    public void allMatch() throws Exception {
+        List<Integer> targetList = Arrays.asList(1, 2, 3, 4, 5);
+        assertTrue(targetList.stream().allMatch(n -> n < 6));
+        assertFalse(targetList.stream().allMatch(n -> n > 6));
+    }
 }
