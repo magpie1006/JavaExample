@@ -6,4 +6,5 @@
 *.iml
 .DS_store
 *.gradle/
-*build/
+*/build/
+*/gradle/
